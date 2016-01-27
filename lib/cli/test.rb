@@ -1,6 +1,7 @@
 module Commander
   module CLI
     desc 'A test command'
+    arg_name '<args>...', %i(:multiple)
     command :test do |c|
       c.desc 'Pass a provider argument'
       c.flag :provider, type: String
