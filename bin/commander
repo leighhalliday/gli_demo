@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'gli'
+
+module Commander
+  module CLI
+    include GLI::App
+    extend self
+
+    require_relative '../lib/cli'
+
+    exit run(ARGV)
+  end
+end
