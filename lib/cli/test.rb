@@ -1,6 +1,6 @@
 module Commander
   module CLI
-    desc 'A test'
+    desc 'A test command'
     command :test do |c|
       c.desc 'Pass a provider argument'
       c.flag :provider, type: String
